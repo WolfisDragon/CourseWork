@@ -109,3 +109,4 @@ C:\Users\Дмитрий\RiderProjects\CourseWork\CourseWork\obj\Debug\net8.0\ref
 C:\Users\Дмитрий\RiderProjects\CourseWork\CourseWork\obj\Debug\net8.0\CourseWork.pdb
 C:\Users\Дмитрий\RiderProjects\CourseWork\CourseWork\obj\Debug\net8.0\CourseWork.genruntimeconfig.cache
 C:\Users\Дмитрий\RiderProjects\CourseWork\CourseWork\obj\Debug\net8.0\ref\CourseWork.dll
+C:\Users\Дмитрий\RiderProjects\CourseWork\CourseWork\obj\Debug\net8.0\CourseWork.sourcelink.json

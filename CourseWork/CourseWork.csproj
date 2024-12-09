@@ -22,7 +22,10 @@
 
     <ItemGroup>
       <Folder Include="Controllers\" />
-      <Folder Include="Dto\" />
+      <Folder Include="Interfaces\Changed\" />
+      <Folder Include="Interfaces\Item\" />
+      <Folder Include="Interfaces\Status\" />
+      <Folder Include="Interfaces\Stuff\" />
       <Folder Include="Repository\" />
       <Folder Include="Services\" />
     </ItemGroup>
