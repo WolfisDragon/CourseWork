@@ -1,9 +1,13 @@
 using CourseWork.Data;
+using CourseWork.Interfaces.Cabinets;
+using CourseWork.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ICabinetRepository, CabinetRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
