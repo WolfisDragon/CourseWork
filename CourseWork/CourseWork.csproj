@@ -21,12 +21,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
       <Folder Include="Interfaces\Changeds\" />
       <Folder Include="Interfaces\Items\" />
       <Folder Include="Interfaces\Statuses\" />
       <Folder Include="Interfaces\Stuffs\" />
-      <Folder Include="Services\" />
     </ItemGroup>
 
 </Project>
