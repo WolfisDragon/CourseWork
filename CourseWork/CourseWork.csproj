@@ -20,11 +20,4 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Interfaces\Changeds\" />
-      <Folder Include="Interfaces\Items\" />
-      <Folder Include="Interfaces\Statuses\" />
-      <Folder Include="Interfaces\Stuffs\" />
-    </ItemGroup>
-
 </Project>

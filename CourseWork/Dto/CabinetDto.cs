@@ -1,6 +1,6 @@
 ﻿namespace CourseWork.Dto;
 
-public class CabinetDto
+public static class CabinetDto
 {
     public class CabinetDtoRead
     {

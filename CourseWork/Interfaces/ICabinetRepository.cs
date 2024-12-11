@@ -1,6 +1,6 @@
 ﻿using CourseWork.Models;
 
-namespace CourseWork.Interfaces.Cabinets;
+namespace CourseWork.Interfaces;
 
 public interface ICabinetRepository
 { 

@@ -1,5 +1,5 @@
 using CourseWork.Dto;
-using CourseWork.Interfaces.Cabinets;
+using CourseWork.Interfaces;
 using CourseWork.Models;
 using CourseWork.Repository;
 
@@ -7,9 +7,9 @@ namespace CourseWork.Services;
 
 public class CabinetService : ICabinetService
 {
-    private readonly CabinetRepository _repository;
+    private readonly ICabinetRepository _repository;
 
-    public CabinetService(CabinetRepository repository)
+    public CabinetService(ICabinetRepository repository)
     {
         _repository = repository;
     }

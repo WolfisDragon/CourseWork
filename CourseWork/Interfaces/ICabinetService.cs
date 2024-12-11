@@ -1,6 +1,6 @@
 using CourseWork.Dto;
 
-namespace CourseWork.Interfaces.Cabinets;
+namespace CourseWork.Interfaces;
 
 public interface ICabinetService
 {

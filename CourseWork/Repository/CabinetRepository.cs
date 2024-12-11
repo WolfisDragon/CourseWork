@@ -1,5 +1,5 @@
 ﻿using CourseWork.Data;
-using CourseWork.Interfaces.Cabinets;
+using CourseWork.Interfaces;
 using CourseWork.Models;
 using Microsoft.EntityFrameworkCore;
 

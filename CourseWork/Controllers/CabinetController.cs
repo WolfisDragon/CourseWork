@@ -1,5 +1,5 @@
 using CourseWork.Dto;
-using CourseWork.Interfaces.Cabinets;
+using CourseWork.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CourseWork.Controllers;
@@ -8,24 +8,24 @@ namespace CourseWork.Controllers;
 [Route("api/cabinet/[controller]")]
 public class CabinetController : ControllerBase
 {
-    private readonly ICabinetService _cardService;
+    private readonly ICabinetService _cabinetService;
 
     public CabinetController(ICabinetService cardService)
     {
-        _cardService = cardService;
+        _cabinetService = cardService;
     }
 
     [HttpGet]
     public async Task<ActionResult<List<CabinetDto.CabinetDtoRead>>> GetAll()
     {
-        var cabinets = await _cardService.GetAllAsync();
+        var cabinets = await _cabinetService.GetAllAsync();
         return Ok(cabinets);
     }
     
     [HttpGet("{id}")]
     public async Task<ActionResult<CabinetDto.CabinetDtoRead>> GetById(int id)
     {
-        var cabinet = await _cardService.GetByIdAsync(id);
+        var cabinet = await _cabinetService.GetByIdAsync(id);
 
         if (cabinet == null)
         {
@@ -43,7 +43,7 @@ public class CabinetController : ControllerBase
             return BadRequest();
         }
 
-        var createdCabinet = await _cardService.CreateAsync(cabinetDto);
+        var createdCabinet = await _cabinetService.CreateAsync(cabinetDto);
 
         return CreatedAtAction(nameof(GetById), new { id = createdCabinet.Id }, createdCabinet);
     }

@@ -1,5 +1,5 @@
 using CourseWork.Data;
-using CourseWork.Interfaces.Cabinets;
+using CourseWork.Interfaces;
 using CourseWork.Repository;
 using CourseWork.Services;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +10,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<ICabinetRepository, CabinetRepository>();
 builder.Services.AddScoped<ICabinetService, CabinetService>();
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<IItemService, ItemService>();
 
 builder.Services.AddDbContext<CourseworkContext>(options =>
 {
