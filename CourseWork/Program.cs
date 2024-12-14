@@ -12,6 +12,8 @@ builder.Services.AddScoped<ICabinetRepository, CabinetRepository>();
 builder.Services.AddScoped<ICabinetService, CabinetService>();
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
 builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+builder.Services.AddScoped<IStatusService, StatusService>();
 
 builder.Services.AddDbContext<CourseworkContext>(options =>
 {
