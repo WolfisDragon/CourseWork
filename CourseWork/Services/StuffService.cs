@@ -54,9 +54,9 @@ public class StuffService : IStuffService
         return new StuffDto.StuffDtoRead
         {
             Id = createdStuff.Id,
-            CabinetNumber = createdStuff.Cabinet.Number,
-            ItemName = createdStuff.Item.Name,
-            StatusName = createdStuff.Status.Name
+            CabinetNumber = createdStuff.Cabinetid.ToString(),
+            ItemName = createdStuff.Itemid.ToString(),
+            StatusName = createdStuff.Statusid.ToString()
         };
 
     }
